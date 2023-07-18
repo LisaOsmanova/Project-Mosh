@@ -367,7 +367,7 @@ a {
 .plan__billing-cycle {
     font-size: 2.4rem;
     font-weight: 300;
-    opacity: 0.8rem;
+    opacity: 0.8;
     margin-right: 1rem;
 }
 
@@ -621,8 +621,8 @@ a {
 /* Blocks */
 
 .block {
-    --padding-vertical: 6rem;
-    padding: var(--padding-vertical) 2rem;
+    --padding-vertical: 3rem;
+    padding: var(--padding-vertical);
 }
 
 .block__heading {
@@ -654,6 +654,14 @@ a {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
+
+@media screen  and (min-width: 768px) {
+    .block {
+        --padding-vertical: 6rem;
+    }
+}
+
+
 
 /* Navigation Bar */
 
@@ -782,7 +790,7 @@ a {
 /* Features */
 
 .feature {
-    gap: 4rem 2rem;
+    /* gap: 4rem 2rem; */
     margin: 12rem 0;
 }
 
@@ -794,7 +802,7 @@ a {
     margin: 1rem 0;
 }
 
-.feature__picture {
+.feature__image {
     width: 100%;
 }
 
@@ -823,6 +831,7 @@ a {
         width: auto;
         max-width: 700px;
     }
+}
 
 /* Footer */
 
